@@ -6,6 +6,7 @@ services:
       context: ./express
     volumes:
       - "./express/app:/app"
+      - "./nginx/cache:/cache"
 
   nginx:
     image: nginx:1.21
